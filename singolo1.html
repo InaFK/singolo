@@ -12,9 +12,9 @@
   </head>
 
   <body>
-    <h1 class="visually-hidden">Singolo</h1>
 
     <header class="header">
+      <h1 class="visually-hidden">Singolo</h1>
       <div class="wrapper header-wrapper">
         <div class="logo">
           <a href="/">Singolo</a>
@@ -42,23 +42,34 @@
     </header>
 
     <main class="page-main">
-      <section class="slider"> <!--heading for section -->
+      <section class="slider">
+        <h1 class="visually-hidden">Slider</h1>
         <div class="wrapper slider-wrapper">
-          <div class="slider-item active">
-            <div class="item-wrapper">
-              <img class="vertical" src="./assets/img/Phone1.svg" alt="Phone1">
+          <div class="items-container">
+            <div class="slider-item active">
+              <div class="item-wrapper">
+                <div class="item-control__top">
+                </div>
+                <img src="./assets/images/phone1.png" alt="phone1">
+                <div class="item-control__bottom">
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="slider-item">
-            <div class="item-wrapper">
-              <img class="horizontal" src="./assets/img/Phone2.svg" alt="Phone2">
+            <div class="slider-item">
+              <div class="item-wrapper item-wrapper__odd">
+                <div class="item-control__top">
+                </div>
+                <img src="./assets/images/phone2.png" alt="phone2">
+                <div class="item-control__bottom">
+                </div>
+              </div>
             </div>
           </div>
           <div class="control left">
-            <div class="arrow left">&lt;</div>
+            <div class="arrow left"></div>
           </div>
           <div class="control right">
-            <div class="arrow right">&gt;</div>
+            <div class="arrow right"></div>
           </div>
         </div>
       </section>
