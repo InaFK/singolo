@@ -121,16 +121,19 @@ ul {
 .slider-item {
   position: relative;
 }
-.slider-item__odd {
-  left: -149px;
-  transform:  rotate(90deg);
-}
 .item-wrapper {
   background-color: #f2f2f2;
   border-radius: 25px;
   box-shadow: 25px 25px #ce5d56, 20px 20px #ce5d56, 15px 15px #ce5d56, 10px 10px #ce5d56, 5px 5px #ce5d56; 
   padding: 62px 11px 56px;
   position: relative;
+}
+.slider-item__odd {
+  left: -149px;
+  transform:  rotate(90deg);
+}
+.slider-item__odd .item-wrapper {
+  box-shadow: 25px -25px 0 #ce5d56, 20px -20px 0 #ce5d56, 15px -15px 0 #ce5d56, 10px -10px 0 #ce5d56;
 }
 .item-wrapper img {
   border: 3px solid #c6c6c6;
