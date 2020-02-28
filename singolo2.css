@@ -46,3 +46,16 @@ ul {
   padding: 0 40px;
   width: 1020px;
 }
+.list {
+  display: flex;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #2d303a;
+  color: #666d89;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
