@@ -48,6 +48,8 @@ ul {
 }
 .list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .description {
   line-height: 1.58;
@@ -80,11 +82,6 @@ ul {
   border-color: #fff;
   color: #fff;
 }
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .portfolio-item {
   margin-bottom: 17px;
 }
@@ -97,6 +94,29 @@ ul {
   padding-top: 56px;
   padding-bottom: 67px;
 }
+.about_us h3 {
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .about_us-description {
   margin-bottom: 50px;
+}
+.about_us-item {
+  width: 300px;
+}
+.about_us-thumb {
+  transition: 0.2s;
+}
+.about_us-thumb:hover {
+  transform: scale(1.05);
+}
+.about_us-item p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+.social-list {
+  justify-content: start;
 }
