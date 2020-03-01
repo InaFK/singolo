@@ -52,7 +52,14 @@ ul {
   justify-content: space-between;
 }
 .description {
-  line-height: 1.58;
+  letter-spacing: -0.01rem;
+  line-height: 1.62;
+}
+.icon {
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 2px solid #666D89;
+  border-radius: 50%;
 }
 
 /* Portfolio */
@@ -65,7 +72,7 @@ ul {
   padding-bottom: 47px;
 }
 .portfolio-description {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 .portfolio__tags {
   font-size: 12px;
@@ -84,6 +91,10 @@ ul {
 }
 .portfolio-item {
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
 }
 
 /* About Us */
@@ -99,6 +110,9 @@ ul {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.about_us h3:hover {
+  cursor: default;
 }
 .about_us-description {
   margin-bottom: 50px;
@@ -116,7 +130,33 @@ ul {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 26px;
+  max-height: 38px;
+  overflow: hidden;
 }
 .social-list {
   justify-content: start;
+}
+.social-list li {
+  margin-right: 8px;
+}
+.social-list .icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.social-list .icon:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+.social-list .icon.icon-fb {
+  background-image: url(./assets/images/social-fb.svg);
+}
+.social-list .icon.icon-google {
+  background-image: url(./assets/images/social-google.svg);
+}
+.social-list .icon.icon-tw {
+  background-image: url(./assets/images/social-tw.svg);
+}
+.social-list .icon.icon-li {
+  background-image: url(./assets/images/social-li.svg);
 }
