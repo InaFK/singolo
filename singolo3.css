@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #f2f2f2;
+  color: #666d89;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0 0 99.9% 99.9%);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+h2 {
+  letter-spacing: 0.09rem;
+  margin: 5px 0 20px;
+}
+h3 {
+  letter-spacing: -0.04rem;
+  margin: 5px 0 9px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 1020px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.description {
+  letter-spacing: -0.01rem;
+  line-height: 1.62;
+}
+.icon {
+  background-repeat: no-repeat;
+  background-position:  center center;
+  border: 2px solid #666D89;
+  border-radius: 50%;
+}
+
+/* Get a Quote */
+
+/* Footer */
