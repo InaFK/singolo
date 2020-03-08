@@ -74,6 +74,8 @@ button.button-colored{
   margin: 0 auto;
   padding: 0 40px;
   width: 1020px;
+
+  border: 1px solid green;
 }
 .list {
   display: flex;
@@ -101,6 +103,35 @@ button.button-colored{
 }
 .layout-2-column > * {
   /* flex-basis: 48%; */
+}
+
+/* Common Styles */
+.social-list {
+  justify-content: start;
+}
+.social-list li {
+  margin-right: 8px;
+}
+.social-list .icon-bordered {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.social-list .icon-bordered:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+.social-list .icon-bordered.icon-fb {
+  background-image: url(./assets/images/social-fb.svg);
+}
+.social-list .icon-bordered.icon-google {
+  background-image: url(./assets/images/social-google.svg);
+}
+.social-list .icon-bordered.icon-tw {
+  background-image: url(./assets/images/social-tw.svg);
+}
+.social-list .icon-bordered.icon-li {
+  background-image: url(./assets/images/social-li.svg);
 }
 
 /* Get a Quote */
@@ -140,7 +171,6 @@ button.button-colored{
   height: 201px;
 }
 .get_a_quote-button {
-
 }
 .get_a_quote-button button {
   background-color: #d6564f;
@@ -171,7 +201,6 @@ button.button-colored{
   color:  #f0d8d9;
   position: relative;
 }
-
 .contact_information-item:hover,
 .contact_information-item .icon:before {
   cursor: pointer;
@@ -197,3 +226,21 @@ button.button-colored{
 }
 
 /* Footer */
+.footer {
+  background: #2d303a;
+  display: flex;
+}
+.footer-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  padding-top: 21px;
+}
+.copyright {
+  font-size: 1.2rem;
+}
+.footer-wrapper .social-list li {
+  line-height: 0.9;
+  margin: 0 0 0 8px;
+}
