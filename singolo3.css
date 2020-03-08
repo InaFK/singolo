@@ -35,6 +35,7 @@ h2 {
   margin: 5px 0 20px;
 }
 h3 {
+  font-size: 1.8rem;
   letter-spacing: -0.04rem;
   margin: 5px 0 9px;
 }
@@ -48,7 +49,7 @@ input {
 input,
 textarea {
   border: 0 none;
-  padding: 13px 15px;
+  padding: 11px 15px;
 }
 input:focus,
 textarea:focus,
@@ -73,8 +74,6 @@ button.button-colored{
   margin: 0 auto;
   padding: 0 40px;
   width: 1020px;
-
-  border: 1px solid green;
 }
 .list {
   display: flex;
@@ -86,6 +85,9 @@ button.button-colored{
   line-height: 1.73;
 }
 .icon {
+
+}
+.icon-bordered {
   background-repeat: no-repeat;
   background-position:  center center;
   border: 2px solid #666D89;
@@ -108,17 +110,16 @@ button.button-colored{
   color: #f0d8d9;
 }
 .get_a_quote-wrapper {
-  padding-bottom: 67px;
+  padding-bottom: 22px;
   padding-top: 55px;
 }
 .get_a_quote-description {
-  padding-bottom: 51px;
+  padding-bottom: 43px;
 }
 .get_a_quot-form {
   display: flex;
   flex-direction: column;
-  flex: auto;
-  position: relative;
+  width: 620px;
 }
 .get_a_quot-form input,
 .get_a_quot-form textarea {
@@ -136,7 +137,7 @@ button.button-colored{
   line-height: 1.2;
 }
 .get_a_quot-form textarea {
-  height: 200px;
+  height: 201px;
 }
 .get_a_quote-button {
 
@@ -148,11 +149,14 @@ button.button-colored{
 }
 .contact_information-content {
   font-size: 1.2rem;
-  margin-left: 20px;
   width: 300px;
 }
+.contact_information-content h3 {
+   margin-top: 0;
+}
 .contact_information-description {
-  margin-bottom: 30px;
+  line-height: 1.76;
+  margin-bottom: 22px;
 }
 .contact_information-list {
   display: flex;
@@ -160,12 +164,36 @@ button.button-colored{
 
 }
 .contact_information-item {
-  line-height: 2.0;
-  margin-bottom: 10px;
+  line-height: 1.84;
   padding-left: 23px;
 }
-.contact_information-item a {
+.contact_information-item .icon {
   color:  #f0d8d9;
+  position: relative;
+}
+
+.contact_information-item:hover,
+.contact_information-item .icon:before {
+  cursor: pointer;
+}
+.contact_information-item .icon:before {
+  background-repeat: no-repeat;
+  background-position:  center center;
+  content: "";
+  height: 12px;
+  left: -22px;
+  position: absolute;
+  top: 2px;
+  width: 13px;
+}
+.contact_information-item .icon-location:before {
+  background-image: url(./assets/images/ico-location.svg); 
+}
+.contact_information-item .icon-phone:before {
+  background-image: url(./assets/images/ico-phone.svg);
+}
+.contact_information-item .icon-mail:before {
+  background-image: url(./assets/images/ico-mail.svg);
 }
 
 /* Footer */
