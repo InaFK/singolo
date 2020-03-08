@@ -141,7 +141,7 @@ button.button-colored{
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
   display: flex;
-  padding: 27px 0 28px;
+  padding: 21px 0 31px;
 }
 .header-wrapper {
   align-items: center;
@@ -164,9 +164,11 @@ button.button-colored{
   height: 100%;
 }
 .navigation-item {
-  line-height: 1.9;
-  padding: 0 12px;
+  padding: 0 13px;
   position: relative;
+}
+.navigation-item:last-child {
+  padding-right: 0;
 }
 .navigation-item:nth-child(n+3):after {
   color: #494e62;
